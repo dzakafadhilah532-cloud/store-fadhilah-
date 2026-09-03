@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
-  <title>Profil Profesional · Minimalis</title>
-  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 (gratis) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dzaka Irfan Fadhilah · Profil Profesional</title>
+  <meta name="description" content="Portfolio profesional Dzaka Irfan Fadhilah – UI/UX Designer & Pengembang Web." />
+  <meta property="og:title" content="Dzaka Irfan Fadhilah · Profil Profesional" />
+  <meta property="og:description" content="Portfolio profesional dengan desain modern dan elegan." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Dzaka+Irfan+Fadhilah" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👤</text></svg>" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     /* ----- RESET & GLOBAL ----- */
     * {
@@ -102,7 +107,6 @@
       cursor: pointer;
     }
 
-    /* dark toggle */
     .theme-toggle {
       background: none;
       border: none;
@@ -113,7 +117,6 @@
     }
     body.dark .theme-toggle { color: #eaeaea; }
 
-    /* responsive nav */
     @media (max-width: 860px) {
       .hamburger { display: block; }
       .nav-menu {
@@ -137,7 +140,7 @@
       .theme-toggle { margin-left: auto; }
     }
 
-    /* ----- SECTIONS (umum) ----- */
+    /* ----- SECTIONS ----- */
     section {
       padding: 4rem 0;
       scroll-margin-top: 80px;
@@ -152,7 +155,7 @@
     .section-title span { color: #0b3b5c; }
     body.dark .section-title span { color: #6ab0e6; }
 
-    /* ----- HERO (beranda) ----- */
+    /* ----- HERO ----- */
     .hero {
       display: flex;
       flex-wrap: wrap;
@@ -234,7 +237,6 @@
     }
     body.dark .btn-outline:hover { background: #eaeaea; color: #141414; }
 
-    /* stat cards */
     .stats {
       display: flex;
       flex-wrap: wrap;
@@ -257,7 +259,7 @@
     .stat-item .label { font-size: 0.9rem; color: #5a5a5a; }
     body.dark .stat-item .label { color: #aaa; }
 
-    /* ----- TENTANG (2 kolom) ----- */
+    /* ----- TENTANG ----- */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -280,7 +282,7 @@
       .about-grid { grid-template-columns: 1fr; }
     }
 
-    /* ----- CV (resume digital) ----- */
+    /* ----- CV ----- */
     .cv-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -314,7 +316,7 @@
       text-align: center;
     }
 
-    /* ----- PORTFOLIO (hasil karya) + filter ----- */
+    /* ----- PORTFOLIO ----- */
     .filter-group {
       display: flex;
       flex-wrap: wrap;
@@ -369,7 +371,7 @@
     body.dark .portfolio-info .btn-small { color: #6ab0e6; }
     .portfolio-info .btn-small:hover { border-bottom-color: currentColor; }
 
-    /* ----- FOTO & ARTIKEL (masonry + lightbox sederhana) ----- */
+    /* ----- FOTO & ARTIKEL ----- */
     .photo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -387,7 +389,6 @@
     }
     .photo-grid img:hover { opacity: 0.85; transform: scale(0.98); }
 
-    /* lightbox sederhana (tanpa library) */
     .lightbox-overlay {
       position: fixed;
       inset: 0;
@@ -414,7 +415,6 @@
       cursor: pointer;
     }
 
-    /* artikel */
     .article-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -460,7 +460,7 @@
     .social-card:hover { transform: translateY(-4px); box-shadow: 0 8px 16px rgba(0,0,0,0.03); }
     .social-card i { font-size: 1.5rem; width: 1.8rem; text-align: center; }
 
-    /* ----- KONTAK + FORM ----- */
+    /* ----- KONTAK ----- */
     .contact-wrap {
       display: grid;
       grid-template-columns: 1fr 1.2fr;
@@ -486,7 +486,7 @@
     .contact-form textarea { min-height: 120px; }
     @media (max-width: 700px) { .contact-wrap { grid-template-columns: 1fr; } }
 
-    /* ----- TESTIMONI (carousel sederhana) ----- */
+    /* ----- TESTIMONI ----- */
     .testi-grid {
       display: flex;
       gap: 1.5rem;
@@ -534,7 +534,7 @@
       font-weight: 500;
     }
 
-    /* animasi scroll halus */
+    /* animasi scroll */
     .fade-up {
       opacity: 0;
       transform: translateY(20px);
@@ -550,7 +550,7 @@
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <div class="logo"><span>Pro</span>fil</div>
+      <div class="logo"><span>Dz</span>aka</div>
       <ul class="nav-menu" id="navMenu">
         <li><a href="#beranda" class="active">Beranda</a></li>
         <li><a href="#tentang">Tentang</a></li>
@@ -569,7 +569,7 @@
   <!-- LIGHTBOX -->
   <div class="lightbox-overlay" id="lightbox">
     <span class="lightbox-close" id="lightboxClose">&times;</span>
-    <img id="lightboxImg" src="" alt="lightbox">
+    <img id="lightboxImg" src="" alt="lightbox" />
   </div>
 
   <main>
@@ -577,7 +577,7 @@
     <section id="beranda" class="container fade-up">
       <div class="hero">
         <div class="hero-content">
-          <h1>Halo, saya <br><span style="color:#0b3b5c;">Aulia Rahman</span></h1>
+          <h1>Halo, saya <br /><span style="color:#0b3b5c;">Dzaka Irfan Fadhilah</span></h1>
           <div class="subhead">UI/UX Designer & Pengembang Web</div>
           <p class="desc">Membangun pengalaman digital yang bermakna dengan kode dan desain. Fokus pada solusi elegan & responsif.</p>
           <div class="btn-group">
@@ -591,7 +591,7 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23d9d9d9'/%3E%3Ctext x='50' y='55' font-size='20' text-anchor='middle' fill='%23555' font-family='Inter'%3E📸%3C/text%3E%3C/svg%3E" alt="Foto profil">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23d9d9d9'/%3E%3Ctext x='50' y='55' font-size='20' text-anchor='middle' fill='%23555' font-family='Inter'%3E📸%3C/text%3E%3C/svg%3E" alt="Foto profil Dzaka" />
         </div>
       </div>
     </section>
@@ -601,7 +601,7 @@
       <h2 class="section-title">Tentang <span>Saya</span></h2>
       <div class="about-grid">
         <div class="about-image">
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e6e6e6'/%3E%3Ctext x='50' y='150' font-size='28' fill='%23555' font-family='Inter'%3E🖼️ Foto profil%3C/text%3E%3C/svg%3E" alt="Tentang">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e6e6e6'/%3E%3Ctext x='50' y='150' font-size='28' fill='%23555' font-family='Inter'%3E🖼️ Foto profil%3C/text%3E%3C/svg%3E" alt="Tentang Dzaka" />
         </div>
         <div class="about-text">
           <p><span class="highlight">Latar belakang:</span> Saya memulai karir sebagai desainer grafis, lalu beralih ke UI/UX dan pengembangan web. Menyukai kolaborasi lintas disiplin.</p>
@@ -625,7 +625,7 @@
       <div class="download-cv"><a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download CV (PDF)</a></div>
     </section>
 
-    <!-- 4. HASIL KARYA (portfolio) -->
+    <!-- 4. HASIL KARYA -->
     <section id="karya" class="container fade-up">
       <h2 class="section-title">Hasil <span>Karya</span></h2>
       <div class="filter-group">
@@ -636,10 +636,10 @@
         <button class="filter-btn" data-filter="web">Website</button>
       </div>
       <div class="portfolio-grid" id="portfolioGrid">
-        <div class="portfolio-item" data-cat="desain"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect fill='%23d9d9d9' width='200' height='150'/%3E%3Ctext x='30' y='80' fill='%23555' font-size='18'%3E🎨 Desain%3C/text%3E%3C/svg%3E" alt="proyek"><div class="portfolio-info"><h4>Brand Identity</h4><div class="category">Desain · 2025</div><a href="#" class="btn-small">Lihat Detail →</a></div></div>
-        <div class="portfolio-item" data-cat="web"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect fill='%23d9d9d9' width='200' height='150'/%3E%3Ctext x='30' y='80' fill='%23555' font-size='18'%3E🌐 Website%3C/text%3E%3C/svg%3E" alt="proyek"><div class="portfolio-info"><h4>Landing Page Tech</h4><div class="category">Website · 2024</div><a href="#" class="btn-small">Lihat Detail →</a></div></div>
-        <div class="portfolio-item" data-cat="foto"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect fill='%23d9d9d9' width='200' height='150'/%3E%3Ctext x='30' y='80' fill='%23555' font-size='18'%3E📸 Foto%3C/text%3E%3C/svg%3E" alt="proyek"><div class="portfolio-info"><h4>Potret Urban</h4><div class="category">Fotografi · 2023</div><a href="#" class="btn-small">Lihat Detail →</a></div></div>
-        <div class="portfolio-item" data-cat="video"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect fill='%23d9d9d9' width='200' height='150'/%3E%3Ctext x='30' y='80' fill='%23555' font-size='18'%3E🎬 Video%3C/text%3E%3C/svg%3E" alt="proyek"><div class="portfolio-info"><h4>Motion Reel</h4><div class="category">Video · 2025</div><a href="#" class="btn-small">Lihat Detail →</a></div></div>
+        <div class="portfolio-item" data-cat="desain"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect fill='%23d9d9d9' width='200' height='150'/%3E%3Ctext x='30' y='80' fill='%23555' font-size='18'%3E🎨 Desain%3C/text%3E%3C/svg%3E" alt="proyek desain"><div class="portfolio-info"><h4>Brand Identity</h4><div class="category">Desain · 2025</div><a href="#" class="btn-small">Lihat Detail →</a></div></div>
+        <div class="portfolio-item" data-cat="web"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect fill='%23d9d9d9' width='200' height='150'/%3E%3Ctext x='30' y='80' fill='%23555' font-size='18'%3E🌐 Website%3C/text%3E%3C/svg%3E" alt="proyek web"><div class="portfolio-info"><h4>Landing Page Tech</h4><div class="category">Website · 2024</div><a href="#" class="btn-small">Lihat Detail →</a></div></div>
+        <div class="portfolio-item" data-cat="foto"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect fill='%23d9d9d9' width='200' height='150'/%3E%3Ctext x='30' y='80' fill='%23555' font-size='18'%3E📸 Foto%3C/text%3E%3C/svg%3E" alt="proyek foto"><div class="portfolio-info"><h4>Potret Urban</h4><div class="category">Fotografi · 2023</div><a href="#" class="btn-small">Lihat Detail →</a></div></div>
+        <div class="portfolio-item" data-cat="video"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect fill='%23d9d9d9' width='200' height='150'/%3E%3Ctext x='30' y='80' fill='%23555' font-size='18'%3E🎬 Video%3C/text%3E%3C/svg%3E" alt="proyek video"><div class="portfolio-info"><h4>Motion Reel</h4><div class="category">Video · 2025</div><a href="#" class="btn-small">Lihat Detail →</a></div></div>
       </div>
     </section>
 
@@ -647,128 +647,10 @@
     <section id="fotoartikel" class="container fade-up">
       <h2 class="section-title">Foto & <span>Artikel</span></h2>
       <div class="photo-grid" id="photoGrid">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23ccc'/%3E%3Ctext x='60' y='110' fill='%23555' font-size='18'%3E📷 1%3C/text%3E%3C/svg%3E" alt="foto 1" onclick="openLightbox(this.src)">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23bbb'/%3E%3Ctext x='60' y='110' fill='%23555' font-size='18'%3E📷 2%3C/text%3E%3C/svg%3E" alt="foto 2" onclick="openLightbox(this.src)">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23ddd'/%3E%3Ctext x='60' y='110' fill='%23555' font-size='18'%3E📷 3%3C/text%3E%3C/svg%3E" alt="foto 3" onclick="openLightbox(this.src)">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23c9c9c9'/%3E%3Ctext x='60' y='110' fill='%23555' font-size='18'%3E📷 4%3C/text%3E%3C/svg%3E" alt="foto 4" onclick="openLightbox(this.src)">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23ccc'/%3E%3Ctext x='60' y='110' fill='%23555' font-size='18'%3E📷 1%3C/text%3E%3C/svg%3E" alt="foto 1" onclick="openLightbox(this.src)" />
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23bbb'/%3E%3Ctext x='60' y='110' fill='%23555' font-size='18'%3E📷 2%3C/text%3E%3C/svg%3E" alt="foto 2" onclick="openLightbox(this.src)" />
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23ddd'/%3E%3Ctext x='60' y='110' fill='%23555' font-size='18'%3E📷 3%3C/text%3E%3C/svg%3E" alt="foto 3" onclick="openLightbox(this.src)" />
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23c9c9c9'/%3E%3Ctext x='60' y='110' fill='%23555' font-size='18'%3E📷 4%3C/text%3E%3C/svg%3E" alt="foto 4" onclick="openLightbox(this.src)" />
       </div>
       <div class="article-grid">
-        <div class="article-card"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='100' viewBox='0 0 200 100'%3E%3Crect fill='%23ccc' width='200' height='100'/%3E%3Ctext x='40' y='55' fill='%23555' font-size='16'%3E📄 Artikel%3C/text%3E%3C/svg%3E" alt="artikel"><h4>Prinsip Desain Inklusif</h4><div class="meta">15 Jan 2025 · Desain</div><p>Membangun antarmuka yang ramah untuk semua...</p><a href="#" class="btn-small">Baca Selengkapnya →</a></div>
-        <div class="article-card"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='100' viewBox='0 0 200 100'%3E%3Crect fill='%23ccc' width='200' height='100'/%3E%3Ctext x='40' y='55' fill='%23555' font-size='16'%3E📄 Artikel%3C/text%3E%3C/svg%3E" alt="artikel"><h4>Optimasi Performa Web</h4><div class="meta">2 Feb 2025 · Teknologi</div><p>Tips ringan untuk meningkatkan kecepatan...</p><a href="#" class="btn-small">Baca Selengkapnya →</a></div>
-      </div>
-    </section>
-
-    <!-- 6. MEDIA SOSIAL -->
-    <section id="sosial" class="container fade-up">
-      <h2 class="section-title">Media <span>Sosial</span></h2>
-      <div class="social-grid">
-        <a href="#" class="social-card"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#" class="social-card"><i class="fab fa-facebook"></i> Facebook</a>
-        <a href="#" class="social-card"><i class="fab fa-youtube"></i> YouTube</a>
-        <a href="#" class="social-card"><i class="fab fa-tiktok"></i> TikTok</a>
-        <a href="#" class="social-card"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-        <a href="#" class="social-card"><i class="fab fa-x-twitter"></i> X</a>
-        <a href="#" class="social-card"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      </div>
-    </section>
-
-    <!-- 7. KONTAK -->
-    <section id="kontak" class="container fade-up">
-      <h2 class="section-title">Kontak <span>Saya</span></h2>
-      <div class="contact-wrap">
-        <div class="contact-info"><p><i class="fas fa-envelope"></i> aulia.rahman@email.com</p><p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p><p><i class="fas fa-map-pin"></i> Bandung, Indonesia</p><p><i class="fas fa-globe"></i> @aulia.design</p></div>
-        <form class="contact-form"><input type="text" placeholder="Nama" required><input type="email" placeholder="Email" required><input type="text" placeholder="Subjek"><textarea placeholder="Pesan..."></textarea><button type="submit" class="btn btn-primary">Kirim Pesan</button></form>
-      </div>
-    </section>
-
-    <!-- 8. TESTIMONI -->
-    <section id="testimoni" class="container fade-up">
-      <h2 class="section-title">Testimoni</h2>
-      <div class="testi-grid">
-        <div class="testi-item"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23ccc'/%3E%3Ctext x='32' y='60' fill='%23555' font-size='24'%3E😊%3C/text%3E%3C/svg%3E" alt="user"><h4>Budi Santoso</h4><p>CEO TechIn</p><div class="stars">★★★★★</div><p>“Desain yang elegan dan komunikatif. Sangat profesional!”</p></div>
-        <div class="testi-item"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23ccc'/%3E%3Ctext x='32' y='60' fill='%23555' font-size='24'%3E😄%3C/text%3E%3C/svg%3E" alt="user"><h4>Dewi Lestari</h4><p>Marketing Manager</p><div class="stars">★★★★☆</div><p>“Kreatif dan tepat waktu. Hasil karya selalu memuaskan.”</p></div>
-        <div class="testi-item"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23ccc'/%3E%3Ctext x='32' y='60' fill='%23555' font-size='24'%3E😎%3C/text%3E%3C/svg%3E" alt="user"><h4>Rangga Wijaya</h4><p>Freelance Photographer</p><div class="stars">★★★★★</div><p>“Sangat mudah bekerja sama, ide-ide segar dan tepat.”</p></div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <div class="footer-grid">
-      <div class="col"><strong>Profil</strong><p style="margin-top:0.3rem;">Aulia Rahman · UI/UX & Web</p></div>
-      <div class="col"><a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#karya">Karya</a><a href="#kontak">Kontak</a></div>
-      <div class="col"><a href="#sosial">Media Sosial</a><a href="#testimoni">Testimoni</a><a href="#cv">CV</a></div>
-      <div class="col"><a href="mailto:aulia.rahman@email.com"><i class="fas fa-envelope"></i> Email</a><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></div>
-    </div>
-    <div style="display:flex; justify-content:space-between; flex-wrap:wrap; margin-top:2rem; border-top:1px solid #eaeaea; padding-top:1rem; font-size:0.9rem;">
-      <span>&copy; 2025 Aulia Rahman · Hak cipta dilindungi.</span>
-      <a href="#" class="back-top"><i class="fas fa-arrow-up"></i> Kembali ke atas</a>
-    </div>
-  </footer>
-
-  <script>
-    // hamburger
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-    hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
-
-    // dark mode
-    const toggle = document.getElementById('themeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      toggle.innerHTML = document.body.classList.contains('dark') ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-    });
-
-    // lightbox
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightboxImg');
-    const closeLightbox = document.getElementById('lightboxClose');
-    function openLightbox(src) { lightboxImg.src = src; lightbox.classList.add('show'); }
-    closeLightbox.addEventListener('click', () => lightbox.classList.remove('show'));
-    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('show'); });
-
-    // filter portfolio (sederhana)
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const items = document.querySelectorAll('.portfolio-item');
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        items.forEach(item => {
-          if (filter === 'all' || item.dataset.cat === filter) item.style.display = 'block';
-          else item.style.display = 'none';
-        });
-      });
-    });
-
-    // scroll animasi fade-up
-    const fades = document.querySelectorAll('.fade-up');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.15 });
-    fades.forEach(el => observer.observe(el));
-
-    // active nav link (smooth scroll)
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-menu a:not(.theme-toggle)');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(section => {
-        const top = section.offsetTop - 120;
-        if (window.scrollY >= top) current = section.getAttribute('id');
-      });
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
-      });
-    });
-
-    // back to top smooth
-    document.querySelector('.back-top')?.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  </script>
-</body>
-</html>
+        <div class="article-card"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
